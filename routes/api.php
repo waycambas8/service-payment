@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-$Service = 'order';
+$Service = 'payment';
 
 Route::group([
     'prefix' => $Service
 ], function () {
     Route::get('', function () {
         return response()->json([
-            'msg' => "Beep Beep Service order is online"
+            'msg' => "Beep Beep Service payment is online"
         ]);
     });
 });
