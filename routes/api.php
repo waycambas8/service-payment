@@ -24,4 +24,31 @@ Route::group([
             'msg' => "Beep Beep Service payment is online"
         ]);
     });
+
+    Route::get('list', function () {
+        return response()->json([
+            'data' => [
+                [
+                    'name' => 'Xendit',
+                    'country' => 'Malaysia'
+                ],
+                [
+                    'name' => 'BRI',
+                    'country' => 'Indonesia'
+                ],
+                [
+                    'name' => 'BNI',
+                    'country' => 'Filiphina'
+                ],
+                [
+                    'name' => 'BCA',
+                    'country' => 'China'
+                ],
+                [
+                    'name' => 'Fazzpay',
+                    'country' => 'Timor-Timor'
+                ]
+            ]
+        ]);
+    });
 });
