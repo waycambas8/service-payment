@@ -37,7 +37,7 @@ Route::group([
                     'country' => 'Indonesia'
                 ],
                 [
-                    'name' => 'BNI',
+                    'name' => 'BNIS',
                     'country' => 'Filiphina'
                 ],
                 [
